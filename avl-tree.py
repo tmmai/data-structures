@@ -434,8 +434,6 @@ class TestAVLTree(unittest.TestCase):
         root.children = [left, right]
         left.children = [None, left_right]
 
-        print(f"AVL: {avl._root}")
-        print(f"MOCK: {root}")
         self.assertEqual(avl._root, root)
     
     def test_get_sorted_keys(self):
